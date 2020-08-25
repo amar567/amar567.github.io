@@ -1,110 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="diduusuhaysbck">
-    <meta name="thumbnail" content="https://amardeephk.xyz/atom.svg">
-    <meta name="description" content="I am Amardeepsingh Kushwah, currently persuing BS-MS integrated course at IISER Kolkata">
-    <meta name="robots" content="index/follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="author" content="amardeepsingh kushwah">
-    <link rel="icon" href="atom2.png">
+<html>
+<head>
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="thumbnail" content="http://amardeephk.xyz/atom.svg">
+  <meta name="keywords" content="my_portfolio">
+  <meta name="description" content="Hi! this is Amardeesingh Kushwah">
+  <meta name="robots" content="index/follow">
+  <meta name="author" content="">
+  <link rel="icon" href="atom2.png">
 
-    <title>Chemistry</title>
+  <!-- title -->
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-theme.min.css">
-  </head>
+  <title>Amardeepsingh</title>
 
-  <body>
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="" style="text-align: center;">
-            <br><br><br>
-            <img src="t-t4.png" alt="" style="width:370px;">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="" style="text-align: center;">
-            <br><br><br><br><br><br><br>
-            <a href="#"><h1>Chemistry</h1></a>
-          <div>
-            <p>the branch of science concerned with the substances of which matter is composed, the investigation of their properties and reactions, and the use of such reactions to form new substances.
-              Chemistry is the scientific discipline involved with elements and compounds composed of atoms, molecules and ions: their composition, structure, properties, behavior and the changes they undergo during a reaction with other substances.
-            </p>
-            <p>Chemistry addresses topics such as how atoms and molecules interact via chemical bonds to form new chemical compounds. There are four types of chemical bonds: covalent bonds, in which compounds share one or more electron(s); ionic bonds, in which a compound donates one or more electrons to another compound to produce ions (cations and anions); hydrogen bonds; and Van der Waals force bonds.</p>
-        </div>
-      </div>
-      </div>
-      </div>
-      <br><br>
-      <div class="row">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-theme.min.css">
+<style>
 
-        <div class="col-sm-6">
-          <div class="" style="text-align: center;">
-            <br><br><br><br><br><br><br>
-            <a href="#"><h1>Chemistry</h1></a>
-          <div>
-            <p>the branch of science concerned with the substances of which matter is composed, the investigation of their properties and reactions, and the use of such reactions to form new substances.
-              Chemistry is the scientific discipline involved with elements and compounds composed of atoms, molecules and ions: their composition, structure, properties, behavior and the changes they undergo during a reaction with other substances.
-            </p>
-            <p>Chemistry addresses topics such as how atoms and molecules interact via chemical bonds to form new chemical compounds. There are four types of chemical bonds: covalent bonds, in which compounds share one or more electron(s); ionic bonds, in which a compound donates one or more electrons to another compound to produce ions (cations and anions); hydrogen bonds; and Van der Waals force bonds.</p>
-        </div>
-      </div>
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  z-index : 10;
+  cursor: pointer;
+  background-color: rgba(2,2,2, 0.5);
+  color: white;
+  padding: 10px 15px;
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+  z-index : 11;
+}
+
+.col-sm-3:hover {
+  background-color: #111;
+  z-index : 11;
+  border-radius: 40px;
+}
+
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#profile">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- nav button ≡ -->
+<div id="main" style="background-color:black;">
+  <button class="openbtn" onclick="openNav()"> <img src="atom2.png" alt="" style="width:50px; align: left;"> </button>
+</div>
+
+<div class="container-fluid" style="background-color:black;">
+
+  <!-- profile -->
+  <div class="row">
+    <a id="profile"></a>
+    <div class="col-md-4">
+      <!--spacer-->
     </div>
-    <div class="col-sm-6">
+    <div class="col-md-4">
       <div class="" style="text-align: center;">
         <br><br><br>
-        <img src="t-t4.png" alt="" style="width:370px;">
+        <img src="amar.png" alt="" style="width:70%;">
       </div>
     </div>
+    <div class="col-md-4">
+      <!--spacer-->
     </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-lg-3">
+      <!--spacer-->
     </div>
-    <br><br><br><br><br><br>
-    <div class="black" style="background-color:blue;">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4" style="color:white;">
+    <div class="col-lg-6" style="text-align: center;color:white;">
+      <h1>Hi! there</h1>
+      <h3>I am Amardeepsingh Kushwah from Maharashtra India.
+      I am basically fascinated by everything, but Physics interests me the most because
+      I can build complex structures from basic principles and can even realize them in practice.
+      Besides this i love doodling, listening music and web designing.
+      </h3>
+    </div>
+    <div class="col-lg-3">
+      <!--spacer-->
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+  <div class="" style="text-align: center;color:white;">
+    <h1>My Blogs</h1>
+
+  </div>
+  <div class="row" style="z-index : 2;">
+      <div class="col-sm-2">
+
+      </div>
+      <div class="col-sm-3">
+        <br><br><br>
+        <div class="" style=" text-align: center;color:white;">
+          <img src="scico.png" alt="" style="width:70%">
+        </div>
+        <div class="" style="text-align: center;color:white;">
+          <a href="http://scico1.wordpress.com/">
             <br><br>
-            <ul>
-              <li><img src="envelope-fill.svg" alt="e-mail" width="20px"><a href="mailto:.com?subject=feedback" style="color:white;">       e-mail</a></li>
-              <br><br>
-              <li><img src="telephone-fill.svg" alt="" width="20px">   :phone no</li>
-            </ul>
-            <br><br>
-          </div>
-          <div class="col-md-4" style="color:white;">
-            <br><br>
-            <ul>
-              <li><img src="github.svg" alt="amar567" width="20px"><a href="https://github.com/amar567?tab=repositories" style="color:white;">       github</a></li>
-              <br><br>
-              <li><img src="mailbox.svg" alt="" width="20px"><a href="https://goo.gl/maps/" style="color:white;">   address</a></li>
-            </ul>
-            <br><br>
-          </div>
-          <div class="col-md-4" style="color:white;">
-            <br><br>
-            <ul>
-              <li><img src="atom.svg" alt="" width="30px"><a href="#" style="color:white;">    Physics</a></li>
-              <br><br>
-              <li><img src="bio.svg" alt="" width="30px"><a href="#" style="color:white;">    Biology</a></li>
-              <br><br>
-            </ul>
-          </div>
+            <h2>Sci-co</h2>
+          </a>
+          <p>This is my own blog where i put some of my ideas, science news updates and other stargazing related cool stuff.</p>
         </div>
       </div>
+      <div class="col-sm-2">
+
+      </div>
+      <div class="col-sm-3" >
+        <br><br><br>
+        <div class="" style="text-align: center;color:white;">
+          <img src="cinquecento.png" alt="" style="width:70%; ">
+        </div>
+        <div class="" style="text-align: center;color:white;">
+          <a href="https://projectcinquecento.blogspot.com/">
+            <br><br>
+            <h2>Cinquecento</h2>
+          </a>
+          <p>This is a collaboration blog on wide variety if topics from biology, computer-science to philosophy and mythology.</p>
+        </div>
+      </div>
+      <div class="col-sm-2 ">
+      </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br>
+  <div class="col-sm-1" style="text-align: right;">
+    <a href="http:zyx.amardeephk.xyz" style="color : #001;"> . </a>
+  </div>
+</div>
+
+
+<div class="" style="background-color:#548c8c;z-index : 3;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4" style="color:black;">
+        <br><br>
+        <ul>
+          <li><img src="atom.svg" alt="" width="30px"><a href="#profile" style="color:black;">  : Physics-blog</a></li>
+          <br><br>
+          <li><img src="discord.svg" alt="" width="30px"><a href="https://discord.gg/AYUgagY" style="color:black;">: ping me at my personal discord server</a></li>
+          <br><br>
+        </ul>
+      </div>
+      <div class="col-md-4" style="color:black;">
+        <br><br>
+        <ul>
+          <li><img src="envelope-fill.svg" alt="e-mail" width="20px"><a href="mailto:amardeepsinghkushwah@gmail.com?cc=ahk19ms165@iiserkol.ac.in&subject=site%20communication%20email " style="color:black;"> : amardeepsinghkushwah@gmail.com</a></li>
+          <br><br>
+          <li><img src="geo.svg" alt="" width="20px"><a href="https://goo.gl/maps/iJgxxDoFwZDzBuux5" style="color:black;">   : IISER Kolkata, Campus Rd, Mohanpur, West Bengal</a></li>
+        </ul>
+        <br><br>
+      </div>
+      <div class="col-md-4" style="color:black;">
+        <br><br>
+        <ul>
+          <li><img src="github.svg" alt="amar567" width="20px"><a href="https://github.com/amar567?tab=repositories" style="color:black;">     : github</a></li>
+          <br><br>
+          <li><img src="researchgate.svg" alt="" width="20px"><a href="https://www.researchgate.net/profile/Amardeepsingh_Kushwah"style="color:black;"> : My researchgate profile</a> </li>
+        </ul>
+        <br><br>
+      </div>
     </div>
+  </div>
+</div>
 
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
-    <!--<br><br><br><br><br><br><br><br><br><br><br> Main jumbotron for a primary marketing message or call to action -->
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 
-
-
-
-  </body>
+</body>
 </html>
