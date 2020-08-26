@@ -59,13 +59,13 @@
   font-size: 20px;
   z-index : 10;
   cursor: pointer;
-  background-color: rgba(2,2,2, 0.5);
+  background-color: rgba(59,59,59, 0.6);
   color: white;
   padding: 10px 15px;
   position: fixed;
   left: 30px;
   top: 30px;
-  border: none;
+  border: none ;
 }
 
 .openbtn:hover {
@@ -75,7 +75,7 @@
 
 .col-sm-3:hover {
   background-color: #111;
-  z-index : 11;
+  z-index : 5theme ;
   border-radius: 40px;
 }
 
@@ -91,6 +91,20 @@
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 </style>
 </head>
 <body>
@@ -105,7 +119,7 @@
 
 <!-- nav button ≡ -->
 <div id="main" style="background-color:black;">
-  <button class="openbtn" onclick="openNav()"> <img src="atom2.png" alt="" style="width:50px; align: left;"> </button>
+  <button class="openbtn" onclick="openNav()"> <img class="rotate" src="atom2.svg" alt="" style="width:50px; align: left;"> </button>
 </div>
 
 <div class="container-fluid" style="background-color:black;">
@@ -145,7 +159,7 @@
   </div>
   <br><br><br><br><br><br>
   <div class="" style="text-align: center;color:white;">
-    <h1>My Blogs</h1>
+    <h1>Blogs</h1>
 
   </div>
   <div class="row" style="z-index : 2;">
